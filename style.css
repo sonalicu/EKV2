@@ -1,0 +1,417 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	font-size:14px;
+	font-family: 'Roboto', Arial, sans-serif;
+	color: #363636;
+	font-weight:300;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:900px;
+	margin:1em 0 0.5em;
+	color: #696969;
+}
+h1 { font-size:3em;}
+h2 { font-size:2.2em;}
+h3 { font-size:2em;}
+h4 { font-size:1.6em;}
+h5 { font-size:1.4em;}
+h6 { font-size:1.2em;}
+
+p {
+	margin:0.3em 0 0.5em;
+}
+
+img {
+	vertical-align: bottom;
+	max-width: 100%;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #e84e1b;
+	transition: 0.2s all ease;
+}
+a:hover {
+	text-decoration: none;
+	color: #F39200;
+}
+a:active {
+	color: #696969;
+}
+.negative {
+	color: #FFF;
+}
+.negative h1,
+.negative h2,
+.negative h3,
+.negative h4,
+.negative h5,
+.negative h6 {
+	color: #FFF;
+}
+.negative a:link,
+.negative a:visited {
+	color: #FFF;
+}
+.negative a:hover {
+	color: #FFF;
+	text-decoration: underline;
+} 
+.negative a:active {
+	color: #FFF;
+}
+.bttn {
+	border: 1px solid #e84e1b;
+	border-radius: 5px;
+	color: #e84e1b;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 1;
+	padding: 17px 33px 15px;
+	margin: 20px 0;
+	text-transform: uppercase;
+	transition: all 0.2s ease;	
+}
+.bttn:hover {
+	background: #FF0004;
+	color: #FFF;
+} 
+.negative .bttn {
+	border: 1px solid #FFF;
+	color: #FFF;
+}
+.negative .bttn:hover {
+	background: #FFF;
+	color: #e84e1b;
+	text-decoration: none;
+}  
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+#headerTop {
+	background: #363636;
+	border-bottom: 3px solid #eee;
+	color: #949494;
+	text-align: center;
+	padding: 20px 0;
+	animation: nav-change infinite 10s;
+			}
+@keyframes nav-change {
+	0% {
+	background: #333;	
+	}
+	50% {
+	background: #FF0004;	
+	}100% {
+	background: #333;	
+	}
+}
+.headerContact span {
+	display: block;
+	margin: 12px 5px;
+}
+.headerSocial a {
+	font-size: 22px;
+}
+#headerBottom {
+	background: black;
+	padding: 20px 0;
+}
+#logo {
+	text-align: center;
+}
+#logo img {
+	width: 100px;
+}
+#nav {
+	margin: 100px 0 0;
+	
+}
+#nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+#nav ul li {
+	display: inline-block;
+	position: relative;
+}
+#nav ul li a {
+	display: block;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	height: 20px;
+	line-height: 20px;
+}
+#nav ul li a:link,
+#nav ul li a:visited {
+	color: #8B8B8B;
+	text-decoration: none;
+} 
+#nav ul li a:hover {
+	color: #FFF;
+	background: #FF0004;
+}
+#nav ul li ul {
+	background: rgba(0,0,0,0.95);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 200px;
+	display: none;
+}
+#nav ul li:hover > ul {
+	display: block;
+}
+#nav ul li ul li {
+	display: block;
+}
+#nav ul li ul li ul {
+	top: 0;
+	left: 100%;
+}
+
+#hero {
+	background: url("Fotke/ekvbackground.jpg") center center / cover no-repeat fixed;
+	padding: 100px 0;
+	text-align: center;
+	margin: 3px 0 0 0;
+}
+#diskografija {
+	background: #EEE;
+	padding: 30px 0;
+	text-align: center;
+}
+.izdanja {
+	background: #FFF;
+	padding: 25px;
+	margin: 60px 0 25px;
+	position: relative;
+}
+.izdanja h1 {
+	font-size: 20px;
+}
+.izdanja {
+	flex-basis: 185px;
+	padding: 20px;
+}
+.izdanja > span {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: #CCC;
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	top: -25px;
+	left: 50%;
+	transform: translateX(-25px)
+}
+#about {
+	background: url("Fotke/ekv-danas-ekatarina-velika.jpg") center center / cover no-repeat fixed;
+	padding: 80px 0;
+}
+#aboutWrap {
+	background: rgba(0,0,0,0.58);
+	padding: 50px;
+}
+#main {
+	width: 700px;
+	float: left;
+	margin: 0 0 10px 100px;
+}
+#katarinaii {
+	margin: 0 0 10px 50px;
+}
+#milan {
+	margin: 0 0 10px 50px;
+}
+.mm:hover::after {
+	content: " (Zagreb, 21. septembar 1958 — Beograd, 5. novembar 1994)";
+}
+#magi {
+	margin: 0 0 10px 70px;
+}
+.ms:hover::after {
+	content: " (Beograd, 1. april 1959 — Beograd, 18. septembar 2002)";
+}
+#bojan {
+	margin: 0 0 10px 230px;
+}
+.bp:hover::after {
+	content: " (Beograd, 22. mart 1960 — London, 13. oktobar 1998)";
+}
+#vd {
+	margin: 0 0 10px 130px;
+}
+.vd:hover::after {
+	content: " (23. februar 1961 — 25. septembar 1992)";
+}
+#ja {
+	margin: 0 0 10px -150px;
+}
+#faca {
+	margin: 0 0 10px -150px;
+}
+#sidebar {
+	width: 333px;
+	float: right;
+	margin: 0 100px 0 0; 
+}
+#sidebaric {
+	width: 333px;
+	float: right;
+	margin: 0 320px 0 0; 
+}
+
+#sidebar .block {
+	margin: 0 0 30px 0;
+}
+#sidebar .block h3 {
+	background: #666565;
+	color: #FFF;
+	padding: 5px 10px;
+}
+
+.slovo::first-letter {
+	color: #FF0004;
+	font-size: 20px;
+}
+.slovo::after {
+	content: " something new";
+}
+::selection {
+	background: #D47072;
+	color: #000000;
+}
+
+table, th, td {
+	border: 2px solid #000000;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+.tbl1 tr:nth-child(2n) {
+	background: #50B3D7;
+}
+
+.tbl1 tr:nth-of-type(1) {
+	background: #DB7072;
+}
+#footer {
+	height: 25px;
+	background: #333;
+	clear: both;
+	color: #FFF;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px;
+	}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	#wrapper {
+		width: 700px;
+	}
+	.headerContact span {
+	display: inline-block;
+	}
+	#nav ul {
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+	#wrapper {
+		width: 960px;
+	}
+	#headerTop .wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	.headerContact span {
+		display: inline-block;
+		margin: 4px 8px 0;
+	}
+	#headerTop {
+		padding: 5px 0;
+	}
+	#headerBottom .wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	#nav ul {
+		flex-direction: row;
+		justify-content: flex-starts;
+	}
+	.diskografijaWrap {
+		display: flex;
+		justify-content: space-between;
+	}	
+	#aboutWrap {
+		width: 400px;
+		
+	}
+	
+}
+
+
+@media screen and (min-width: 1281px) {
+	#wrapper {
+		width: 1200px;
+	}
+	#headerTop .wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	.headerContact span {
+		display: inline-block;
+		margin: 4px 8px 0;
+	}
+	#headerTop {
+		padding: 5px 0;
+	}
+	#headerBottom .wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	#nav ul {
+		flex-direction: row;
+		justify-content: flex-starts;
+	}
+	#hero {
+		padding: 200px 0;
+	}
+	.izdanja {
+		flex-basis: 250px;
+		padding: 25px;
+}
+	.diskografijaWrap {
+		display: flex;
+		justify-content: space-between;
+		padding: 25px;
+	}	
+	#aboutWrap {
+		width: 600px;
+		
+	}
+
+}
